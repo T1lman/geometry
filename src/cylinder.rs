@@ -13,8 +13,8 @@ impl Cylinder {
         Self {
             volume: radius.powf(2.0) * PI * height,
             surface: (2.0 * radius * PI * height) + (2.0 * PI * radius.powf(2.0)),
-            radius: radius,
-            height: height,
+            radius,
+            height,
         }
     }
 }

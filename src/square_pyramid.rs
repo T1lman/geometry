@@ -15,8 +15,8 @@ impl Pyramid {
         Self {
             volume: base_length.powf(2.0) * height * 1.0 / 3.0,
             surface: base_length.powf(2.0) + 2.0 * base_length * hypo,
-            base_length: base_length,
-            height: height,
+            base_length,
+            height,
         }
     }
 }

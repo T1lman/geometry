@@ -10,7 +10,7 @@ impl Cube {
         Self {
             volume: base_length.powf(3.0),
             surface: 6.0 * base_length.powf(2.0),
-            base_length: base_length,
+            base_length,
         }
     }
 }

@@ -8,16 +8,16 @@ pub struct RightTriangle {
 impl RightTriangle {
     pub fn construct_with_hypothenuse(hypothenuse: f64, opposite: f64) -> Self {
         Self {
-            hypothenuse: hypothenuse,
-            opposite: opposite,
+            hypothenuse,
+            opposite,
             adjacent: (hypothenuse.powf(2.0) - opposite.powf(2.0)).sqrt(),
         }
     }
     pub fn construct_without_hypothenuse(opposite: f64, adjacent: f64) -> Self {
         Self {
             hypothenuse: (opposite.powf(2.0) + adjacent.powf(2.0)).sqrt(),
-            opposite: opposite,
-            adjacent: adjacent,
+            opposite,
+            adjacent,
         }
     }
 }
