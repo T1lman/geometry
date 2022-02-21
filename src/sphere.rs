@@ -4,6 +4,7 @@ use std::f64::consts::PI;
 pub struct Sphere {
     volume: f64,
     surface: f64,
+    radius: f64,
 }
 
 impl Sphere {
@@ -11,6 +12,7 @@ impl Sphere {
         Self {
             volume: radius.powf(3.0) * PI,
             surface: 4.0 * radius.powf(2.0) * PI,
+            radius: radius,
         }
     }
     pub fn get_radius_from_volume(&self) -> f64 {

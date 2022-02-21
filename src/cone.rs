@@ -5,6 +5,8 @@ use std::f64::consts::PI;
 pub struct Cone {
     volume: f64,
     surface: f64,
+    radius: f64,
+    height: f64,
 }
 
 impl Cone {
@@ -13,6 +15,8 @@ impl Cone {
         Self {
             volume: 1.0 / 3.0 * PI * radius.powf(2.0) * height,
             surface: PI * radius.powf(2.0) + PI * radius * hypo,
+            radius: radius,
+            height: height,
         }
     }
 }
